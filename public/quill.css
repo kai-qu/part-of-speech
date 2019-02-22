@@ -1,0 +1,13 @@
+#text-editor {
+  width: 45%;
+  float: left;
+  position: relative;
+}
+
+#editor-container {
+    min-height: 120px !important;
+    max-height: 700px;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    /* overflow-x: scroll; */
+}

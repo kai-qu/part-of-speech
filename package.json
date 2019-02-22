@@ -1,0 +1,32 @@
+{
+  "name": "part-of-speech",
+  "version": "1.0.0",
+  "description": "A conversational interface for writing.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypotext/part-of-speech.git"
+  },
+  "keywords": [
+    "writing",
+    "interface"
+  ],
+  "author": "jjuang + kye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypotext/part-of-speech/issues"
+  },
+  "homepage": "https://github.com/hypotext/part-of-speech#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "oxford-dictionary-api": "^1.0.1",
+    "socket.io": "^2.1.1"
+  },
+  "engines": {
+    "node": "9.3.0"
+  }
+}

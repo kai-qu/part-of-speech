@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>part of speech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- For page -->
+    <link rel="stylesheet" href="./page.css" />
+
+    <!-- For server -->
+    <script src="socket.io/socket.io.js"></script>
+
+    <!-- For bot -->
+    <link rel="stylesheet" href="./botui.min.css" />
+    <link rel="stylesheet" href="./botui-theme-default.css" />
+
+    <!-- For text editor -->
+    <link rel="stylesheet" href="./quill.css" />
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" />
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.snow.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" />
+    
+    <meta name="description" content="A conversational interface for writing.">
+  </head>
+  <body>
+    <div class="page">
+    
+    <div class="interface" id="text-editor">
+      <br>
+      <div id="editor-container" autofocus="autofocus">
+      </div>
+    </div>  
+
+    <div class="interface botui-app-container scroll8" id="bot">
+      <bot-ui></bot-ui>
+    </div>
+    
+    <!-- For bot -->
+    <!-- <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script> -->
+    <!-- https://github.com/botui/botui/issues/34 and 78, 66 -->
+    <script src="https://cdn.jsdelivr.net/vue/2.0.6"></script>
+    <!-- <script src="./botui.js"></script> -->
+    <script src="./botui.min.js"></script>
+    <script src="./bot.js"></script>
+    
+    <!-- For text editor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./quill-embed.js"></script>
+      
+    </div>
+  </body>
+</html>
